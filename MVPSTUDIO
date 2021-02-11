@@ -1,0 +1,4 @@
+Create Database MVPSTUDIO
+
+CREATE TABLE MVPSTUDIO.dbo.Students
+(StudentID int not null,FirstName varchar(20),BirthDate Date null,Age tinyint null)

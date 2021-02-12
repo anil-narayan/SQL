@@ -5,3 +5,8 @@ CREATE TABLE MVPSTUDIO.dbo.Students
 
 Alter Table Students
 Add Column Gender char(1)null;
+
+
+Select Property Id,Property Name
+From Property 
+Where Id in (Select [Property Id] From [keys].[dbo].[OwnerProperty] Where[OwnerID]=1426)
